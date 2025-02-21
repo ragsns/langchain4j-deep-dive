@@ -5,9 +5,7 @@ tasks:
       cd /workspace/quarkus-astra-intro-demo 
       sed -i '1,$s/sdkman_auto_answer=false/sdkman_auto_answer=true/' /home/gitpod/.sdkman/etc/config 
       sed -i '1,$s/sdkman_selfupdate_enable=true/sdkman_selfupdate_enable=false/' /home/gitpod/.sdkman/etc/config 
-      sdk install java 22.0.0.2.r11-grl -y
-      export GRAALVM_HOME=$JAVA_HOME
-      "$GRAALVM_HOME"/bin/gu install native-image
+      sdk install java 21.0.6-ms
       sudo apt-get install --reinstall xdg-utils --fix-missing -y
       sudo apt-get update
       sudo apt-get install -y apt-transport-https ca-certificates curl
